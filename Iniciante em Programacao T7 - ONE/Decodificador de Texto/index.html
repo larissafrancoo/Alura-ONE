@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="decodificador">
+        <img class="logo__imagem" src="./assets/alura.png" alt="Alura logo">
+        <section class="input">
+            <textarea id="input_js" class="input__texto" name="textarea" placeholder="Digite seu texto"></textarea>
+            <div class="input__aviso">
+                <img class="aviso__imagem" src="./assets/exclamacao.png" alt="sinal exclamação">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="input__button">
+                <button id="cripto_button" class="input__button__um">Criptografar</button>
+                <button id="descripto_button" class="input__button__dois">Descriptografar</button>
+            </div>
+        </section>
+        <section class="output">
+            <div id="temp_div">
+                <img class="output1__imagem" src="./assets/illustration.png" alt="Imagem ilustrativa">
+                <div class="output1__texto">
+                    <h3 class="output1__texto__um">Nenhuma mensagem encontrada</h3>
+                    <p class="output1__texto__dois">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <div class="out_div" id="output2" style="display: none">
+                <p class="output2__texto" id="out_text"></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer_infos">
+        <p>Desenvolvido por Larissa Franco</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
